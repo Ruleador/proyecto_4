@@ -1,16 +1,50 @@
-# React + Vite
+Aplicación fullstack que permite subir archivos CSV y analizarlos con inteligencia artificial mediante preguntas en lenguaje natural.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ ¿Qué hace?
 
-Currently, two official plugins are available:
+📁 Sube un CSV arrastrando o seleccionando el archivo.
+🤖 Pregunta en lenguaje natural sobre tus datos.
+📈 Recibe respuesta generada por IA al instante.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Cómo ejecutarlo en local
+Requisitos
 
-## React Compiler
+Node.js v18 o superior
+Una API key de OpenAI o Anthropic
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Clona el repositorio
+git clone https://github.com/Ruleador/proyecto_4.git
+cd proyecto_4
 
-## Expanding the ESLint configuration
+# Instala dependencias del backend
+cd backend
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Instala dependencias del frontend
+cd ../frontend
+npm install
+
+# Configuración
+Crea un archivo .env dentro de la carpeta backend/:
+PORT=3000
+ANTHROPIC_API_KEY=tu_api_key_aqui
+
+# Ejecución
+# Abre dos terminales:
+# Terminal 1 - Backend
+cd backend
+npm run dev
+
+# Terminal 2 - Frontend
+cd frontend
+npm run dev
+
+# Abre el navegador en http://localhost:5173
+
+Este proyecto fue construido como parte de mi portfolio como desarrollador junior. Durante el desarrollo aprendí a:
+
+Conectar un frontend React con un backend Express desde cero
+Manejar subida de archivos con Multer
+Integrar APIs de inteligencia artificial
+Gestionar variables de entorno y seguridad con .gitignore
+Controlar errores HTTP en el backend
